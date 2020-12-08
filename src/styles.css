@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: #1b262c;
+  color: white;
+  margin: 0;
+  height: 80vh;
+  width: 100vw;
+}
+
+.App input {
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: white;
+  font-size: large;
+}
+
+.App h2 {
+  font-size: 1.5rem;
+}
+
+.emoji-section {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.fruits-emoji-section {
+  margin-top: 3rem;
+}
+
+.emoji-section span {
+  cursor: pointer;
+  margin: 0.5rem;
+}
