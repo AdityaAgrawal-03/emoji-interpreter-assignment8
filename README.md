@@ -17,4 +17,4 @@
 * Only emoji inputs are allowed.
 
 ### Demo
-![Screenshot of webiste]()
+![Screenshot of webiste](https://github.com/AdityaAgrawal-03/emoji-interpreter-assignment8/blob/main/src/demo/demo.png)
