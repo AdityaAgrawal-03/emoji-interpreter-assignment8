@@ -6,8 +6,6 @@ body {
   background-color: #1b262c;
   color: white;
   margin: 0;
-  /* height: 80vh;
-  width: 100vw; */
 }
 
 .App input {
@@ -32,15 +30,13 @@ body {
   margin: auto;
   max-width: 600px;
   margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
-.fruits-emoji-section {
-  margin-top: 3rem;
+  font-size: 2rem;
 }
 
 .emoji-section span {
   cursor: pointer;
+}
+
+.emoji-style {
   margin: 0.5rem;
-  padding: 0.2rem;
 }

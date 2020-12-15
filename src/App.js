@@ -52,25 +52,6 @@ const foodEmojiDatabase = {
   "🥡": "Takeout Box"
 };
 
-const fruitEmojiDatabase = {
-  "🍇": "Grapes",
-  "🍈": "Melon",
-  "🍉": "Watermelon",
-  "🍊": "Tangerine",
-  "🍋": "Lemon",
-  "🍌": "Banana",
-  "🍍": "Pineapple",
-  "🥭": "Mango",
-  "🍎": "Red Apple",
-  "🍏": "Green Apple",
-  "🍐": "Pear",
-  "🍑": "Peach",
-  "🍒": "Cherries",
-  "🍓": "Strawberry",
-  "🥝": "Kiwi Fruit",
-  "🍅": "Tomato"
-};
-
 const drinkEmojiDatabase = {
   "🍯": "Honey Pot",
   "🍼": "Baby Bottle",
@@ -93,7 +74,6 @@ const drinkEmojiDatabase = {
 export default function App() {
   const [meaning, setMeaning] = useState("");
 
-  var fruitsEmoji = Object.keys(fruitEmojiDatabase);
   var drinksEmoji = Object.keys(drinkEmojiDatabase);
   var foodEmoji = Object.keys(foodEmojiDatabase);
 
@@ -113,9 +93,9 @@ export default function App() {
     setMeaning(meaning);
   }
 
-  function fruitClickHandler(item) {
-    //from fruit emoji database
-    var meaning = fruitEmojiDatabase[item];
+  function foodClickHandler(item) {
+    // from food emoji database
+    var meaning = foodEmojiDatabase[item];
 
     setMeaning(meaning);
   }
@@ -123,13 +103,6 @@ export default function App() {
   function drinkClickHandler(item) {
     // from drink emoji database
     var meaning = drinkEmojiDatabase[item];
-
-    setMeaning(meaning);
-  }
-
-  function foodClickHandler(item) {
-    // from food emoji database
-    var meaning = foodEmojiDatabase[item];
 
     setMeaning(meaning);
   }
@@ -143,14 +116,15 @@ export default function App() {
 
       <h2>Meaning : {meaning}</h2>
 
-      <div className="emoji-section fruits-emoji-section">
-        <h3>Fruits </h3>
-        {fruitsEmoji.map((item) => {
+      <div className="emoji-section">
+        <h3>Foods</h3>
+
+        {foodEmoji.map((item) => {
           return (
             <span
               className="emoji-style"
               key={item}
-              onClick={() => fruitClickHandler(item)}
+              onClick={() => foodClickHandler(item)}
             >
               {item}
             </span>
@@ -167,22 +141,6 @@ export default function App() {
               className="emoji-style"
               key={item}
               onClick={() => drinkClickHandler(item)}
-            >
-              {item}
-            </span>
-          );
-        })}
-      </div>
-
-      <div className="emoji-section">
-        <h3>Foods</h3>
-
-        {foodEmoji.map((item) => {
-          return (
-            <span
-              className="emoji-style"
-              key={item}
-              onClick={() => foodClickHandler(item)}
             >
               {item}
             </span>
